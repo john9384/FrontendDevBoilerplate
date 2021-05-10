@@ -1,0 +1,32 @@
+// Colors
+$color-pry: #002147;
+$color-sec: #004ea8;
+$color-tet: #00499e;
+
+$color-text: white;
+
+//     320px — 480px: Mobile devices.
+//     481px — 768px: iPads, Tablets.
+//     769px — 1024px: Small screens, laptops.
+//     1025px — 1200px: Desktops, large screens.
+//     1201px and more — Extra large screens, TV.
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+// Screen resolutions converted to 'em' unit
+$res-largest: 75em;
+$res-large: 68.75em;
+$res-medium: 56.25em;
+$res-small: 37.5em;
+$res-smallest: 31.25em;

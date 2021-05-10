@@ -1,0 +1,57 @@
+// Base Style
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  @media screen and (max-width: $res-largest) {
+    font-size: 56%;
+  }
+  @media screen and (max-width: $res-large) {
+    font-size: 50%;
+  }
+}
+body {
+  max-width: 100%;
+  font-family: "lato", Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+// Animations
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+// Typography
+
+a {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:link,
+  &:visited {
+    color: inherit;
+  }
+  &:active {
+    outline: none;
+  }
+}
